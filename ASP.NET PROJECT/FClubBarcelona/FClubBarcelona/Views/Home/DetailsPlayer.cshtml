@@ -1,0 +1,29 @@
+﻿@model FClubBarcelona.Models.ViewModels.Home.DetailsPlayersVm
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <br/>
+            <h1 class="display-3"style="font-family: monospace">@Html.DisplayFor(x => x.FirstName) @Html.DisplayFor(x => x.LastName)</h1>
+            <br/>
+            <iframe width="560" height="315" src="@Html.DisplayFor(x => x.VideoUrl)" frameborder="0" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            <h4 class="text-info" style="font-family: monospace">
+                @Html.DisplayFor(x => x.Description)
+            </h4>
+            <br/>
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.Age)</strong> - @Html.DisplayFor(x => x.Age)</p>
+            <br/>
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.DateOfBirth)</strong> - @Html.DisplayFor(x => x.DateOfBirth.Year) /@Html.DisplayFor(x => x.DateOfBirth.Month) /@Html.DisplayFor(x => x.DateOfBirth.Day)</p>
+            <br/>
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.Position)</strong> - @Html.DisplayFor(x => x.Position)</p>
+            <br/>
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.Number)</strong> - @Html.DisplayFor(x => x.Number)</p>
+            <br/>
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.Nationality)</strong> - @Html.DisplayFor(x => x.Nationality)</p>
+            <br/>
+            @Html.ActionLink("Back to All Players", "Players", null, new {@class = "btn btn-default"})
+        </div>
+    </div>
+</div>

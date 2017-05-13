@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNet.Identity
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="">
+                <h1>
+                    <br />
+                    Welcome to Blog Panel!!
+                </h1>
+                <h2>
+                    @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!" + " " + "You are Blog Author!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </h2>
+                <br />
+                @*<p>
+                    <h4>The page you are looking for cannot be found!</h4>
+                </p>*@
+                <br />
+                <p><img src="/Content/MyTemplete/images/Admin.png" width="200" height="200" /></p>
+                <div>
+                    @Html.ActionLink("Go to Home", "Index", "Home", new { Area = ""},null)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

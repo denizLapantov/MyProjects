@@ -1,0 +1,26 @@
+﻿@model HandleErrorInfo
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="">
+                <h1>
+                    <br />
+                    Oops!
+                </h1>
+                <h2>
+                    Something Wrong!
+                </h2>
+                <br />
+                <p>
+                    <h4>Forbidden Access</h4>
+                </p>
+                <br />
+                <p><img src="/Content/MyTemplete/images/forbidden2.jpg" width="200" height="200" /></p>
+                <div>
+                   @Html.ActionLink("Go to Home", "Index","Home",new {Area =""},new {@class = "btn btn-default"})
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

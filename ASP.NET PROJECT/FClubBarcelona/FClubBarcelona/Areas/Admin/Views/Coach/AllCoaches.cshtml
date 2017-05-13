@@ -1,0 +1,55 @@
+﻿@model IEnumerable<FClubBarcelona.Models.ViewModels.Coaches.CoachVm>
+
+@{
+    ViewBag.Title = "All Coaches";
+}
+
+<h2>Coaches</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddCoach")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CoachYears)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </th>
+        <th colspan="2">
+            @Html.DisplayNameFor(model => model.Nationality)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CoachYears)
+        </td>  
+        <td>
+            <img class="img-responsive" width="200" height="200" src=@Html.DisplayFor(x => item.ImageUrl) alt="" />
+        </td>  
+        <td>
+            @Html.DisplayFor(modelItem => item.Nationality)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditCoach", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "DeleteCoach", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,17 @@
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\FClubBarcelona.Data.dll.config
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\FClubBarcelona.Data.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\FClubBarcelona.Data.pdb
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\EntityFramework.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\FClubBarcelona.Models.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\FClubBarcelona.Models.pdb
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\FClubBarcelona.Models.dll.config
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\EntityFramework.xml
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\obj\Debug\FClubBarcelona.Data.csprojResolveAssemblyReference.cache
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\obj\Debug\FClubBarcelona.Data.dll
+C:\Users\Deniz Lapantov\Desktop\ASP.NET PROJECT\FClubBarcelona\FClubBarcelona.Data\obj\Debug\FClubBarcelona.Data.pdb

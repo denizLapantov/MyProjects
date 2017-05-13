@@ -1,0 +1,26 @@
+﻿@model FClubBarcelona.Models.ViewModels.Coaches.CoachDetailsVm
+    
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <br />
+            <h1 class="display-3"style="font-family: monospace">@Html.DisplayFor(x => x.FirstName) @Html.DisplayFor(x => x.LastName)</h1>
+            <br />
+            <img src=@Html.DisplayFor(x=>x.ImageUrl) class="img-rounded" alt="Cinque Terre" width="700" height="400">
+            <br />
+            <br />            
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.CoachYears)</strong> - @Html.DisplayFor(x => x.CoachYears)</p>            
+            <br />
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.Nationality)</strong> - @Html.DisplayFor(x => x.Nationality)</p>
+            <br />
+            <h4 class="text-info" style="font-family: monospace">
+                @Html.DisplayFor(x => x.Description)               
+            </h4>          
+            <br />
+            <br />
+            <iframe width="700" height="400" src="@Html.DisplayFor(x=>x.VideoUrl)" frameborder="0" allowfullscreen></iframe>
+            <br />
+            @Html.ActionLink("Back to All Coaches","Coaches",null,new {@class = "btn btn-default" })
+        </div>
+    </div>
+</div>

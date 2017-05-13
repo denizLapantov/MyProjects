@@ -1,0 +1,27 @@
+﻿@model IEnumerable<FClubBarcelona.Models.ViewModels.Home.PlayerViewModel>
+
+<div class="container">
+    <div class="row">     
+        @using (Ajax.BeginForm("Search", new AjaxOptions
+        {
+            UpdateTargetId = "cont",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "Get"
+        }))
+        {
+            <br/>
+            <div class="col-md-2 col-md-offset-5 navbar-right">
+                <input class="form-control" name="query" type="text" />
+            </div>
+            <input class="col-md-2 col-md-offset-5 btn btn-default navbar-right" type="submit" value="Search"/>
+        }
+
+        <div id="cont">
+            @Html.Partial("SortPlayers", Model)
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryajax")
+}

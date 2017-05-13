@@ -1,0 +1,17 @@
+﻿@model IEnumerable<FClubBarcelona.Models.ViewModels.Galery.GaleryViewModel>
+
+<div class="container">
+    <br/>
+    <h2 class="text-center" style="font-family: monospace">Photos</h2>
+    <div class="row">
+        <br/>
+        @foreach (var photo in Model)
+        {
+            <div class="col-md-6">
+                <img class="img-responsive" src=@Html.DisplayFor(x => photo.ImageUrl) alt="">
+                <h4 style="font-family: fantasy">@Html.DisplayFor(x=>photo.ImageTitle)</h4>
+            </div>
+        }
+    </div>
+    <div class="text-center">@Html.ActionLink("Back to Home", "Index", "Home", null, new { @class = "btn btn-default" })</div>
+</div>

@@ -1,0 +1,25 @@
+﻿@model FClubBarcelona.Models.ViewModels.Blog.ArticleDetailsVm
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">       
+            <br />
+            <h2 style="font-family: monospace"><strong>@Html.DisplayFor(x => x.StartArticle)</strong></h2>
+            <br />
+            <img src=@Html.DisplayFor(x=>x.ImageTitle) class="img-rounded" alt="Cinque Terre" width="600" height="300">
+            <br />  
+            <br/>
+            <h4 class="text-info" style="font-family: monospace">                            
+                @Html.DisplayFor(x => x.Content)
+            </h4>          
+            <br/>
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.Autor)</strong> - @Html.DisplayFor(x => x.Autor)</p>
+            <br />
+            <p style="font-family: monospace"><strong>@Html.LabelFor(x => x.PublishDate)</strong> - @Html.DisplayFor(x => x.PublishDate.Day)/@Html.DisplayFor(x => x.PublishDate.Month)/@Html.DisplayFor(x => x.PublishDate.Year) (@Html.DisplayFor(x => x.PublishDate.DayOfWeek))</p>
+            <br />
+            <iframe width="560" height="315" src="@Html.DisplayFor(x=>x.YouTubeUrl)" frameborder="0" allowfullscreen></iframe>
+            <br />
+            @Html.ActionLink("Back to All Articles", "Articles", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+</div>

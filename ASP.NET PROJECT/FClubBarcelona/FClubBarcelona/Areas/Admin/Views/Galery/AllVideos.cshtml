@@ -1,0 +1,44 @@
+﻿@model IEnumerable<FClubBarcelona.Models.ViewModels.Video.VideoVm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Videos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddVideo")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideoUrl)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duration)
+        </td>
+        <td>
+            <iframe width="150" height="150" src=@Html.DisplayFor(x => item.VideoUrl) allowfullscreen></iframe>
+        </td>          
+        <td>
+            @Html.ActionLink("Edit", "EditVideo", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "DeleteVideo", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

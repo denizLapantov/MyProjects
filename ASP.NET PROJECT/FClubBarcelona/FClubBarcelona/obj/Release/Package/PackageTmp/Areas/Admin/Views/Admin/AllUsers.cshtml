@@ -1,0 +1,50 @@
+﻿@model IEnumerable<FClubBarcelona.Models.ViewModels.Account.EditUserViewModel>
+
+@{
+    ViewBag.Title = "All Users";
+}
+
+<h2>Users</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Register" ,"Account",new {Area = ""},null) 
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th colspan="2">
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditUsers", new { id = item.UserName }) |
+            @Html.ActionLink("Roles", "UserRoles", new { id = item.UserName }) |
+            @Html.ActionLink("Delete", "DeleteUser", new { id = item.UserName })
+        </td>
+    </tr>
+}
+
+</table>
